@@ -1,0 +1,243 @@
+body {
+  background-image: url(../assets/images/back.jpg);
+  margin: 0;
+  font-family: fantasy;
+}
+
+header {
+  background-image: url(../assets/images/12.jpg);
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+header img {
+  width: 150px;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+.navegacion {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navegacion a {
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: 400;
+  text-align: center;
+  align-content: center;
+  color: blueviolet;
+  margin-right: 30px;
+  height: fit-content;
+  margin-top: 70px;
+}
+
+.navegacion a:hover {
+  color: whitesmoke;
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+.contenedor-productos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.titulo-index {
+  text-align: center;
+  color: blueviolet;
+}
+
+.titulo-sale {
+  text-align: center;
+  color: blueviolet;
+}
+
+.contenedor-productos img {
+  width: 200px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.producto p {
+  text-align: center;
+}
+.producto h1 {
+  text-align: center;
+  color: green;
+}
+
+.imagen-producto:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+.blog {
+  justify-content: center;
+  background-image: url(../assets/images/12.jpg);
+  background-size: 100% 100%;
+  padding-bottom: 30px;
+  box-shadow: 10px 10px 10px 10px black;
+}
+
+.blog img {
+  width: 200px;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+.blog h4 {
+  text-align: center;
+  color: whitesmoke;
+  letter-spacing: 3px;
+  font-size: larger;
+}
+
+.blog p {
+  color: blueviolet;
+  text-align: center;
+  margin-left: 300px;
+  margin-right: 300px;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+
+.flex-container {
+  display: flex;
+}
+.flex-container img {
+  width: 400px;
+  margin-left: 100px;
+}
+
+.container-p {
+  max-width: 400px;
+  margin-left: 50px;
+  text-align: justify;
+  font-size: larger;
+}
+
+.precio {
+  color: green;
+  font-size: x-large;
+}
+
+.precioviejo {
+  color: red;
+  font-size: x-large;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.catalogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 500px;
+}
+
+h2 {
+  color: blueviolet;
+  font-size: 34px;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  padding: 17px 20px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  background-color: gainsboro;
+  outline: none;
+  border: 2px gainsboro;
+}
+
+.enviar {
+  background-color: blueviolet;
+  cursor: pointer;
+  box-shadow: 0 0 7px;
+}
+
+.enviar:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+@media (max-width: 1000px) {
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  .blog {
+    align-items: center;
+  }
+  .blog p {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .contenedor-productos {
+    flex-direction: column;
+    align-items: center;
+  }
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navegacion {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .input-group {
+    width: 200px;
+  }
+  .flex-container img {
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 300px;
+  }
+
+  .flex-container p {
+    font-size: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 462px) {
+  .navegacion {
+    flex-direction: column;
+  }
+  .flex-container img {
+    width: 200px;
+  }
+}
