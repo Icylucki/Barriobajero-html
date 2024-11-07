@@ -18,40 +18,30 @@
       <a href="templates/contacto.html" class="box">CONTACTO</a>
       <a href="templates/ofertas.html" class="box">OFERTAS</a>
     </div>
+
+    <section id="Buscador">
+      <form action="Buscar">
+        <label for="categoria" class="Cat">Filtrar por categoria</label>
+        <select name="categoria" id="categoria">
+          <option value="">Todo</option>
+          <option value="Pantalones">Pantalones</option>
+          <option value="Remeras">Remeras</option>
+          <option value="Abrigos">Abrigos</option>
+        </select>
+
+        
+      </form>
+    </section>
+
+    
+
   </header>
 
   <main>
-    <!-- contenido de la página -->
-    <div>
-      <div>
-        <h1 class="titulo-index">PRODUCTOS DISPONIBLES</h1>
-      </div>
-      <div class="contenedor-productos">
-        <div class="producto">
-          <div class="imagen-producto">
-            <a href="templates/producto1.html"><img src="assets/images/11.jpg" alt="" /></a>
-          </div>
-
-          <p>ADIDAS ORIGINALS</p>
-        </div>
-        <div class="producto">
-          <div class="imagen-producto">
-            <a href="templates/producto2.html"><img src="assets/images/22.jpg" alt=""></a>
-          </div>
-
-          <p>JERSEY JOCKEY</p>
-        </div>
-        <div class="producto">
-          <div class="imagen-producto">
-            <a href="templates/producto3.html"><img src="assets/images/33.jpg" alt="" /></a>
-          </div>
-
-          <p>ROMPE NIKE</p>
-        </div>
-
-      </div>
-    </div>
-
+  
+    <section id="productos" class="contenedor-productos">
+      <!-- Los productos serán insertados aquí dinámicamente -->
+    </section>
 
 
   </main>
@@ -76,6 +66,16 @@
     </div>
 
   </footer>
+
+  <script src="../js/ajax.js"></script>
+  <script src="../js/scripts.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      alert('¡Bienvenido a Barrio Bajero!');
+    });
+  </script>
+
 </body>
 
 </html>

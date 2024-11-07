@@ -12,7 +12,7 @@
   <header class="header">
     <!-- menu de navegación, logos, redes, etc -->
 
-    <a href="../barriobajero.html"><img class="logo" src="../assets/images/logopng.png" alt="" /></a>
+    <a href="../index.html"><img class="logo" src="../assets/images/logopng.png" alt="" /></a>
     <div class="navegacion">
       <a href="../templates/catálogo.html" class="box">CATÁLOGO</a>
       <a href="contacto.html" class="box">CONTACTO</a>
@@ -30,26 +30,63 @@
       <div class="input-group">
 
         <label for="nombre">Nombre</label>
-        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
 
         <label for="apellido">Apellido</label>
-        <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido">
+        <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido" required>
 
         <label for="telefono">Telefono</label>
-        <input type="tel" name="telefono" id="telefono" placeholder="Ingrese un número de telefono">
+        <input type="tel" name="telefono" id="telefono" placeholder="Ingrese un número de telefono" required>
 
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico">
+        <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico" required>
 
         <label for="consulta">Su consulta</label>
-        <textarea name="consulta" id="consulta" placeholder="¿Cual es su consulta?"></textarea>
+        <textarea name="consulta" id="consulta" placeholder="¿Cual es su consulta?"></textarea required> 
 
         <input class="enviar" type="submit" value="Enviar">
 
       </div>
+      
+      <p id="mensaje-exito" style="display: none; color: green;">Formulario enviado con éxito.</p>
+
+
 
 
     </form>
+
+    <script>
+      
+      document.getElementById('telefono').addEventListener('input', function (event) {
+        // Elimina cualquier carácter que no sea un número
+        this.value = this.value.replace(/[^0-9]/g, '');
+      });
+    
+      function validarFormulario(event) {
+        event.preventDefault(); // Previene el envío del formulario si hay errores
+        
+        // Obtén los valores de los campos
+        const nombre = document.getElementById('nombre').value.trim();
+        const apellido = document.getElementById('apellido').value.trim();
+        const telefono = document.getElementById('telefono').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const consulta = document.getElementById('consulta').value.trim();
+    
+        // Validación del formato del email
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+          alert("Por favor, ingresa un correo electrónico válido.");
+          return;
+        }
+    
+        // Validación del teléfono (mínimo 8 dígitos)
+        if (telefono.length < 8) {
+          alert("Por favor, ingresa un número de teléfono válido (al menos 8 dígitos).");
+          return;
+        }
+    
+      }
+    </script>
 
 
   </main>

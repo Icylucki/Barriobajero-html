@@ -1,0 +1,31 @@
+{
+  "camperas": [
+    {
+      "categoria": "Abrigos",
+      "titulo": "ADIDAS ORIGINALS",
+      "precio": "15000",
+      "img": "../assets/images/11.jpg",
+      "url": "../templates/producto1.html",
+      "disponible": true
+      
+    },
+    {
+      "categoria": "Abrigos",
+      "titulo": "JERSEY HOCKEY",
+      "precio": "20000",
+      "img": "../assets/images/22.jpg",
+      "url": "../templates/producto2.html",
+      "disponible": true
+    }
+  ],
+  "pantalones": [
+    {
+      "categoria": "Pantalones",
+      "titulo": "ROMPE NIKE",
+      "precio": "10000",
+      "img": "../assets/images/33.jpg",
+      "url": "../templates/producto3.html",
+      "disponible": true
+    }
+  ]
+}

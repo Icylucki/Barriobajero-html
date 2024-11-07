@@ -8,14 +8,15 @@ header {
   background-image: url(../assets/images/12.jpg);
   background-size: 100% 100%;
   display: flex;
-  justify-content: space-between;
-  padding-bottom: 50px;
+  justify-content: space-evenly;
+  padding-bottom: 20px;
 }
 
 header img {
-  width: 150px;
-  margin-left: 20px;
   margin-top: 30px;
+  width: 300px;   /* Establece un tamaño fijo de 300 píxeles de ancho */
+    height: 200px;  /* Establece un tamaño fijo de 200 píxeles de altura */
+    object-fit: cover;
 }
 
 .logo:hover {
@@ -25,7 +26,7 @@ header img {
 
 .navegacion {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .navegacion a {
@@ -241,3 +242,109 @@ textarea {
     width: 200px;
   }
 }
+
+#Buscador{
+  color: blueviolet;
+  justify-content: end;
+  font-size: x-large;
+}
+
+#Buscador select{
+  width: 200px;
+  padding: 6px 10px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  background-color: gainsboro;
+  outline: none;
+  border: 2px gainsboro;
+  cursor: pointer;
+}
+
+#Buscador select:hover{
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+.contenedor-productos{
+  margin-top: 50px;
+}
+
+.contenedor-productos img:hover{
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+.contenedor-productos h4{
+  color: green;
+  text-align: center;
+  font-size: larger;
+}
+
+.contenedor-camperas h2, .contenedor-pantalones h2 {
+  text-align: center; /* Centra el texto horizontalmente */
+  font-size: xx-large; /* Tamaño de fuente ajustado */
+  margin: 20px 0; /* Espacio superior e inferior */
+  color: blueviolet;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  
+  }
+
+.contenedor-productos h3{
+    background-color: blueviolet;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    color: aliceblue;
+    text-shadow: 
+    1px 1px 0px black,    
+    -1px -1px 0px black,  
+    1px -1px 0px black,   
+    -1px 1px 0px black;
+    letter-spacing: 1px;
+    font-weight: normal;
+
+  }
+
+  .contenedor-productos h2{
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: xx-large; /* Tamaño de fuente ajustado */
+    margin: 20px 0; /* Espacio superior e inferior */
+    color: blueviolet;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .producto {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: calc(33% - 20px); /* Tres productos por fila */
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .producto img {
+    width: 70%;
+    height: auto;
+  }
+  
+  .producto h3 {
+    margin: 10px 0;
+  }
+  
+  .producto p {
+    font-size: 1.2em;
+    color:green;
+  }
+  
+  .producto a {
+    text-decoration: none;
+    color: i
+  }
+
+  section h2{
+    text-align: center;
+  }
+
+
+  .contenedor-productos p{
+    font-size: x-large;
+  }
